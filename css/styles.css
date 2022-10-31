@@ -148,7 +148,9 @@ img {
 
 .site-nav .link,
 .contacts .link {
-  display: block;
+  display: inline-flex;
+  align-items: center;
+
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -175,6 +177,12 @@ img {
 
 .link.current {
   color: var(--accent-color);
+}
+
+.email-icon,
+.phone-icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 /* Унікальний контент головної сторінки */
