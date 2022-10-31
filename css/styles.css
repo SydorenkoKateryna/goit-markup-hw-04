@@ -14,6 +14,9 @@
   --card-border: #eeeeee;
   --card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
+    --icon-color: #afb1b8;
+    --icon-background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Загальні стилі */
@@ -195,13 +198,13 @@ img {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  
+
   background-image: linear-gradient(
-    to right,
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)
-  ),
-  url('../images/hero-background.jpg');
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/hero-background.jpg");
   background-color: #c4c4c4;
   background-repeat: no-repeat;
   background-size: cover;
@@ -336,6 +339,40 @@ img {
 
   font-weight: 500;
   color: var(--primary-title-color);
+}
+
+.team .text {
+  margin-bottom: 16px;
+}
+
+.worker-description .socials {
+  display: flex;
+  justify-content: center;
+}
+
+.worker-description .item + .item {
+  margin-left: 10px;
+}
+
+.worker-description .link {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  padding: 12px;
+
+  color: var(--icon-color);
+  background-color: var(--primary-white-color);
+}
+
+.worker-description .link:hover,
+.worker-description .link:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.worker-description .socials-icon {
+  fill: currentColor;
 }
 
 /* Футер */
