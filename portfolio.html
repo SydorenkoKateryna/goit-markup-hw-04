@@ -35,14 +35,23 @@
             <li class="item"><a href="#" class="link">Контакти</a></li>
           </ul>
         </nav>
+
         <ul class="list contacts">
           <li class="item">
-            <a href="mailto:info@devstudio.com" class="link"
-              >info@devstudio.com</a
+            <a href="mailto:info@devstudio.com" class="link">
+              <svg class="email-icon" width="16" height="12">
+                <use href="./images/icons.svg#email"></use>
+              </svg>
+              info@devstudio.com</a
             >
           </li>
           <li class="item">
-            <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+            <a href="tel:+380961111111" class="link">
+              <svg class="phone-icon" width="10" height="16">
+                <use href="./images/icons.svg#phone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
           </li>
         </ul>
       </div>
@@ -214,33 +223,76 @@
 
     <!-- Підвал -->
     <footer class="footer">
-      <div class="container">
-        <a href="./index.html" class="link logo"
-          >Web<span class="logo-accent">Studio</span></a
-        >
-        <address>
-          <ul class="list address">
+      <div class="container flex-footer">
+        <div>
+          <a href="./index.html" class="link logo"
+            >Web<span class="logo-accent">Studio</span></a
+          >
+          <address>
+            <ul class="list address">
+              <li class="item">
+                <a
+                  href="https://goo.gl/maps/h3TF1u6DC4w7aENq9"
+                  target="_blank"
+                  rel="noopener nofollow noreferrer"
+                  class="link map"
+                  >м. Київ, пр-т Лесі Українки, 26</a
+                >
+              </li>
+
+              <li class="item">
+                <a href="mailto:info@devstudio.com" class="link"
+                  >info@devstudio.com</a
+                >
+              </li>
+
+              <li class="item">
+                <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="join-in">
+          <p class="text">приєднуйтесь</p>
+          <ul class="list socials">
             <li class="item">
-              <a
-                href="https://goo.gl/maps/h3TF1u6DC4w7aENq9"
-                target="_blank"
-                rel="noopener nofollow noreferrer"
-                class="link map"
-                >м. Київ, пр-т Лесі Українки, 26</a
-              >
+              <a href="#" class="link" aria-label="Інстаграм">
+                <svg class="socials-icon" width="20" height="20">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+                <span class="visually-hidden">Інстаграм</span>
+              </a>
             </li>
 
             <li class="item">
-              <a href="mailto:info@devstudio.com" class="link"
-                >info@devstudio.com</a
-              >
+              <a href="#" class="link" aria-label="Твіттер">
+                <svg class="socials-icon" width="20" height="20">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+                <span class="visually-hidden">Твіттер</span>
+              </a>
             </li>
 
             <li class="item">
-              <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+              <a href="#" class="link" aria-label="Фейсбук">
+                <svg class="socials-icon" width="20" height="20">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
+            </li>
+
+            <li class="item">
+              <a href="#" class="link" aria-label="Лінкедін">
+                <svg class="socials-icon" width="20" height="20">
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+                <span class="visually-hidden">Лінкедін</span>
+              </a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>
