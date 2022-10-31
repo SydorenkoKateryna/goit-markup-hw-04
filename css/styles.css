@@ -283,7 +283,8 @@ img {
 
 /* Чим ми займаємося */
 .activities .title,
-.team .title {
+.team .title,
+.clients .title {
   margin-bottom: 50px;
 
   font-size: 36px;
@@ -372,6 +373,43 @@ img {
 }
 
 .worker-description .socials-icon {
+  fill: currentColor;
+}
+
+/* Постійні клієнти */
+.companies {
+  display: flex;
+  margin-left: -30px;
+}
+
+.companies .item {
+  width: calc((100% - 6 * 30px) / 6);
+  margin-left: 30px;
+}
+
+.companies .link {
+  display: inline-block;
+  width: 170px;
+  height: 92px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+
+  color: var(--icon-color);
+  background-color: var(--primary-white-color);
+}
+
+.companies .link:hover,
+.companies .link:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.companies-icon {
   fill: currentColor;
 }
 
